@@ -7,6 +7,7 @@
     <UserSecretsId>34e9795e-7231-4b12-bc3a-b1e32be34d5f</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="dotenv.net" Version="3.1.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.11" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
     <PackageReference Include="HotChocolate.AspNetCore" Version="13.5.1" />

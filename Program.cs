@@ -1,5 +1,8 @@
+using dotenv.net;
 using Microsoft.EntityFrameworkCore;
 using minozas_catering_api_dotnet.Context;
+
+DotEnv.Load();
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Configuration.AddEnvironmentVariables();

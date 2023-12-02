@@ -10,7 +10,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_URLS=http://+:5000
       - ASPNETCORE_HTTP_PORT=https://+:5001
-      - ASPNETCORE_DB=postgres://postgres:postgres@localhost:5432/minozas_catering_db
+      - ASPNETCORE_DB=postgresql://postgres:postgres@localhost:5432/minozas_catering_db
     networks:
       - app-network
     depends_on:
