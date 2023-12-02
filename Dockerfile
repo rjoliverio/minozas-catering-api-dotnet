@@ -4,6 +4,9 @@ WORKDIR /source
 COPY . .
 RUN dotnet restore "./minozas-catering-api-dotnet.csproj" --disable-parallel
 RUN dotnet publish "./minozas-catering-api-dotnet.csproj" -c release -o /app --no-restore
+RUN dotnet tool install --global dotnet-ef
+ENV PATH="$PATH:/root/.dotnet/tools"
+RUN dotnet ef database update
 
 # Serve Stage 
 FROM mcr.microsoft.com/dotnet/aspnet:6.0-focal
