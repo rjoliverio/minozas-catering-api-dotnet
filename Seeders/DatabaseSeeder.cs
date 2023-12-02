@@ -31,7 +31,7 @@ namespace minozas_catering_api_dotnet.Context.Seeders
                 Id=3,
                 Name="Chicken Alfredo",
                 CategoryId=categories[0].Id,
-                Rate=4.5,
+                Rate=4,
                 Description="Thin-crust pizza topped with tomato sauce, fresh mozzarella, and basil leaves.",
                 Image="https://img.freepik.com/free-photo/side-view-pasta-with-sauce-parmesan-mushrooms-lettuce_176474-2504.jpg?w=740&t=st=1695261078~exp=1695261678~hmac=6541d1678468b9a97fad41d19c49bcf50fc2b9e0d10ee8193f7dc03887c74c1c"
             },
@@ -39,7 +39,7 @@ namespace minozas_catering_api_dotnet.Context.Seeders
                 Id=4,
                 Name="Bruschetta",
                 CategoryId=categories[1].Id,
-                Rate=3.5,
+                Rate=3,
                 Description="Toasted bread topped with diced tomatoes, garlic, basil, and olive oil.",
                 Image="https://img.freepik.com/free-photo/tasty-bruschetta-with-tomatoes-basil_1220-7130.jpg?w=1060&t=st=1695261055~exp=1695261655~hmac=87f4131596b0ae974ae70c67e131072c102c8ac4c9455e7de00c6f0e2fd858e1"
             },

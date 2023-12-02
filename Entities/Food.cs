@@ -12,7 +12,7 @@ namespace minozas_catering_api_dotnet.Entities
         public Category Category { get; set; } = default!;
         public string Name { get; set; } = default!;
         public string Description { get; set; } = default!;
-        public double Rate { get; set; } = default!;
+        public int Rate { get; set; } = default!;
         public string Image { get; set; } = default!;
     }
 }
