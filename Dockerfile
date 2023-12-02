@@ -4,7 +4,7 @@ WORKDIR /source
 COPY . .
 RUN dotnet restore "./minozas-catering-api-dotnet.csproj" --disable-parallel
 RUN dotnet publish "./minozas-catering-api-dotnet.csproj" -c release -o /app --no-restore
-RUN dotnet tool install --global dotnet-ef
+RUN dotnet tool install --global dotnet-ef --version 3.1
 ENV PATH="$PATH:/root/.dotnet/tools"
 RUN dotnet ef database update
 
