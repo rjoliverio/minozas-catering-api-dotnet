@@ -11,9 +11,9 @@ namespace minozas_catering_api_dotnet.Schema.Queries
         {
             _foodService = foodService;
         }
-        public async Task<List<Food>> FindAll()
+        public async Task<List<Food>> FindAllFood(string category, string searchQuery)
         {
-            return await _foodService.findAll();
+            return await _foodService.findAll(category, searchQuery);
         }
     }
 }

@@ -14,13 +14,15 @@ builder.Configuration.AddEnvironmentVariables();
 // GraphQL Schema
 builder.Services.AddGraphQLServer()
     .AddQueryType(q => q.Name("Query"))
-    .AddType<FoodQuery>();
+    .AddType<FoodQuery>()
+    .AddType<CategoryQuery>();
 
 // DB Connection
 builder.Services.AddPooledDbContextFactory<StoreContext>(o => o.UseNpgsql(builder.Configuration["ASPNETCORE_DB"]));
 
 // Services
 builder.Services.AddScoped<FoodService>();
+builder.Services.AddScoped<CategoryService>();
 
 // CORS Config
 builder.Services.AddCors(options =>
